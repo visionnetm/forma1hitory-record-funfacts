@@ -20,22 +20,35 @@
   top:0;
   z-index:999;
   background:linear-gradient(90deg,#c59d5f,#e6c98d);
-  color:#0f0d09;
+  padding:12px 10px;
   text-align:center;
-  padding:10px 12px;
   font-weight:700;
   font-size:14px;
-  letter-spacing:0.3px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.topbar span{
+  color:#0f0d09;
 }
 
 .topbar a{
-  color:#0f0d09;
+  background:#0f0d09;
+  color:#e6c98d;
   text-decoration:none;
+  padding:8px 14px;
+  border-radius:8px;
   font-weight:800;
+  font-size:13px;
+  transition:0.2s;
 }
 
-.topbar:hover{
-  filter:brightness(1.05);
+.topbar a:hover{
+  background:#1a1710;
+  transform:translateY(-1px);
 }
 /* ===== GLOBAL ===== */
 body{
@@ -136,13 +149,12 @@ footer{
 </head>
 
 <body>
-    
-<div class="topbar">
-      🚀 Discover ALL our premium sport, football, and racing websites →
-      <a href="https://visionnetwebsites.vercel.app" target="_blank">
-        VisionNet Hub
-      </a>
-    </div>
+    <div class="topbar">
+  <span>🔥 Explore all our premium sports & football websites</span>
+  <a href="https://visionnetwebsites.vercel.app" target="_blank">
+    VISIT VISIONNET HUB →
+  </a>
+</div>
 
 <div class="container">
 
